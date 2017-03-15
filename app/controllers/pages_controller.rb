@@ -5,7 +5,7 @@ class PagesController < ApplicationController
     end
     
     def admin
-        
+        @message = Client.all
     end
     
     def create
@@ -17,8 +17,31 @@ class PagesController < ApplicationController
         end
     end
     
+    def message
+        @message = Client.all
+        render :layout => false
+    end
+    
+    def content
+        @content = Content.find(1)
+        render :layout => false
+    end
+    
+    def update
+       @content = Content.find(1)
+       if @content.update_attributes(content_params)
+           redirect_to root_path
+       else
+           render "admin"
+       end
+    end
+    
     private
         def client_params
             params.require(:client).permit(:name, :email, :contact_number)
+        end
+        
+        def content_params
+            params.require(:content).permit(:tagline, :heading, :message_confirmation)
         end
 end

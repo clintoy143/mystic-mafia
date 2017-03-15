@@ -1,0 +1,21 @@
+<%= form_for @content, url: content_path do |client| %>
+    <div class="form-group">
+        <%= client.label :heading %>
+        <%= client.text_field :heading, class:"form-control"%>
+    </div>
+    
+    <div class="form-group">
+        <%= client.label :tagline %>
+        <%= client.text_field :tagline, class:"form-control"%>
+    </div>
+    
+    <div class="form-group">
+        <%= client.label :message_confirmation %>
+        <%= client.text_area :message_confirmation, class:"form-control"%>
+    </div>
+    
+    <div class="form-group">
+          <%= client.submit "Update" %>
+    </div>
+<% end %>    
+    
