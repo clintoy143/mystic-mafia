@@ -11,6 +11,8 @@ class PagesController < ApplicationController
     def create
         @client = Client.create(client_params)
         if @client.save
+            
+            UserNotify.send_client_mail(@client).deliver
             redirect_to admin_path
         else
             render "landing"
