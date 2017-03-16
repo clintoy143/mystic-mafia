@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+    get '/sent' => "pages#sent", as: "/thanks"
     get '/login' => 'sessions#new'
     post '/login' => 'sessions#create'
     get '/logout' => 'sessions#destroy'

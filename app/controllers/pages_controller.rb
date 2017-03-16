@@ -14,7 +14,7 @@ class PagesController < ApplicationController
         @client = Client.create(client_params)
         if @client.save
             
-            redirect_to root_path
+            redirect_to thanks_path
         else
             render "landing"
         end
@@ -37,6 +37,10 @@ class PagesController < ApplicationController
        else
            render "admin"
        end
+    end
+    
+    def sent
+        @content = Content.find(1)
     end
     
     private
