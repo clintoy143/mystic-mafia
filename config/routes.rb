@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+    get '/login' => 'sessions#new'
+    post '/login' => 'sessions#create'
+    get '/logout' => 'sessions#destroy'
     patch "/content" => "pages#update"
     get "/message" => "pages#message"
     get "/content" => "pages#content"

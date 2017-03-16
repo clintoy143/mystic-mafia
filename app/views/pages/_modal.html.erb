@@ -23,6 +23,11 @@
           </div>
           
           <div class="form-group">
+            <%= client.label :confirm_email %>
+            <%= client.email_field :confirm_email, class:"form-control"%>
+          </div>
+          
+          <div class="form-group">
             <%= client.label :contact_number %>
             <%= client.text_field :name, class:"form-control"%>
           </div>

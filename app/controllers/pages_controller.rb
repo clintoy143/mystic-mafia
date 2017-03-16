@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+    before_action :authorize, only: [:admin, :message, :content, :update]
+    
     def landing
         @content = Content.find(1)
         @client = Client.new
@@ -12,8 +14,7 @@ class PagesController < ApplicationController
         @client = Client.create(client_params)
         if @client.save
             
-            UserNotify.send_client_mail(@client).deliver
-            redirect_to admin_path
+            redirect_to root_path
         else
             render "landing"
         end
@@ -40,7 +41,7 @@ class PagesController < ApplicationController
     
     private
         def client_params
-            params.require(:client).permit(:name, :email, :contact_number)
+            params.require(:client).permit(:name, :email, :contact_number, :confirm_email)
         end
         
         def content_params
