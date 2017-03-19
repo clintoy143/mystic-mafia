@@ -23,22 +23,39 @@
 </div>
  <%= render "modal"%>   
 <!-- /.intro-header -->
-
+<div class="container-fluid">
+    <div class="row">
+        
+    </div>
+    <div class="row">
+        <h2 class="text-center">Inquiries? Get in touch with us &nbsp; &nbsp;<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+        +63 995 344 1335</h2>
+    </div>
+</div>
 <!-- Page Content -->
 
 <a  name="services"></a>
 <div class="content-section-a">
 
+<script>
+    $(document).ready(function(){
+        
+    });
+</script>    
+
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 col-sm-5">
+            <div class="col-md-4">
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
-                <h2 class="section-heading">Death to the Stock Photo:<br>Special Thanks</h2>
-                <p class="lead">A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.</p>
+                <h2 class="section-heading" style="display:inline-block;">Mandani Bay</h2> &nbsp SUITES
+                <p class="lead">
+                    The waterfront lifestyle at Mandani Bay begins at Mandani Bay Suites, the property’s first residential enclave.
+                    Two towers are situated on a large podium that houses recreational amenities, community support facilities, and car parks.
+                </p>
             </div>
-            <div class="col-lg-5 col-lg-offset-2 col-sm-7">
-                <%= image_tag ("3.jpg"), class:"img-responsive" %>
+            <div class="col-md-8 text-right">
+                <%= image_tag ("3.jpg"), class:"img-des" %>
             </div>
         </div>
 
@@ -53,14 +70,16 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+            <div class="col-md-8 green">
+                <%= image_tag ("1.jpg"), class:"img-des"%>
+            </div>
+            <div class="col-md-4">
+                
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
-                <h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>
-                <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
-            </div>
-            <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                <%= image_tag ("1.jpg"), class:"img-responsive"%>
+                <h2 class="section-heading">Green Promenade</h2>
+                <p class="lead">This extensive tree-lined avenue cuts through the property, lending a grounded and refreshing 
+                spirit to the environment and encouraging an active lifestyle among residents.</p>                
             </div>
         </div>
 
@@ -75,14 +94,14 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-lg-5 col-sm-6">
+            <div class="col-md-4">
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
-                <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
-                <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
+                <h2 class="section-heading">Waterfront and Boardwalk</h2>
+                <p class="lead">Fronting Mandani Bay, a grand harbor provides a stunning view of the coast and surrounding skyline.</p>
             </div>
-            <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                <%= image_tag ("4.jpg"), class:"img-responsive" %>
+            <div class="col-md-8 text-right">
+                <%= image_tag ("4.jpg"), class:"img-des" %>
             </div>
         </div>
 
@@ -97,22 +116,15 @@
 
     <div class="container">
 
-        <div class="row">
-            <div class="col-lg-6">
-                <h2>Connect to Start Bootstrap:</h2>
-            </div>
-            <div class="col-lg-6">
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                    </li>
-                </ul>
+        <div class="row text-center">
+            <h2>Our Developers</h2>
+            <br />
+            <p class="dev-des">
+            Asia’s leading property developer and one of the Philippines’ fastest-growing
+            real estate brands  <br /> have come together to bring Mandani Bay to life.
+            </p>
+            <a href="http://taft.properties/" class="btn btn-default btn-lg" target="_blank"><%= image_tag("rsz_taft-logo.png")%></a>
+            <a href="http://www.hkland.com/en/home.html" class="btn btn-default btn-lg" target="_blank"><%= image_tag("hk-logo.png")%></a>
             </div>
         </div>
 
@@ -127,24 +139,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <ul class="list-inline">
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li class="footer-menu-divider">&sdot;</li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-                <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+
+                <p class="copyright text-muted small">Copyright &copy; Cebu Properties International 2017. All Rights Reserved</p>
             </div>
         </div>
     </div>
