@@ -7,6 +7,10 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+#my-wrapper{
+    display: none;
+}
+
 body,
 html {
     width: 100%;
@@ -184,6 +188,13 @@ p.copyright {
 }
 
 .dev-des{
-    color: black;
+    color: #dbdde0;
 }
 
+.description-col {
+    color: #7c7c7c;
+}
+
+.inquiry{
+    background: image_url("bg/upfeathers.png");
+}

@@ -8,7 +8,7 @@
             <div class="col-lg-12">
                 <div class="intro-message">
                     <h1><%= @content.heading.upcase %></h1>
-                    <h3 style="color: #dbdde0;"><%= @content.tagline %></h3>
+                    <h3 class="dev-des"><%= @content.tagline %></h3>
                     <hr class="intro-divider">
                     <buttontype="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Set Appointment</button>
                        
@@ -24,24 +24,17 @@
  <%= render "modal"%>   
 <!-- /.intro-header -->
 <div class="container-fluid">
-    <div class="row">
-        
+    <div class="row inquiry">
+        <h3 class="text-center" style="color:#7c7c7c;">Inquiries? Get in touch with us &nbsp;
+        <span class="glyphicon glyphicon-earphone"  aria-hidden="true"></span>
+        &nbsp;+63 995 344 1335</h3>
+            <br />
     </div>
-    <div class="row">
-        <h2 class="text-center">Inquiries? Get in touch with us &nbsp; &nbsp;<span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
-        +63 995 344 1335</h2>
-    </div>
+
 </div>
 <!-- Page Content -->
 
-<a  name="services"></a>
 <div class="content-section-a">
-
-<script>
-    $(document).ready(function(){
-        
-    });
-</script>    
 
     <div class="container">
         <div class="row">
@@ -49,12 +42,12 @@
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
                 <h2 class="section-heading" style="display:inline-block;">Mandani Bay</h2> &nbsp SUITES
-                <p class="lead">
+                <p class="lead description-col">
                     The waterfront lifestyle at Mandani Bay begins at Mandani Bay Suites, the property’s first residential enclave.
                     Two towers are situated on a large podium that houses recreational amenities, community support facilities, and car parks.
                 </p>
             </div>
-            <div class="col-md-8 text-right">
+            <div class="col-md-8 text-center">
                 <%= image_tag ("3.jpg"), class:"img-des" %>
             </div>
         </div>
@@ -70,7 +63,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-md-8 green">
+            <div class="col-md-8 text-center">
                 <%= image_tag ("1.jpg"), class:"img-des"%>
             </div>
             <div class="col-md-4">
@@ -78,7 +71,7 @@
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">Green Promenade</h2>
-                <p class="lead">This extensive tree-lined avenue cuts through the property, lending a grounded and refreshing 
+                <p class="lead description-col">This extensive tree-lined avenue cuts through the property, lending a grounded and refreshing 
                 spirit to the environment and encouraging an active lifestyle among residents.</p>                
             </div>
         </div>
@@ -98,9 +91,9 @@
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">Waterfront and Boardwalk</h2>
-                <p class="lead">Fronting Mandani Bay, a grand harbor provides a stunning view of the coast and surrounding skyline.</p>
+                <p class="lead description-col">Fronting Mandani Bay, a grand harbor provides a stunning view of the coast and surrounding skyline.</p>
             </div>
-            <div class="col-md-8 text-right">
+            <div class="col-md-8 text-center">
                 <%= image_tag ("4.jpg"), class:"img-des" %>
             </div>
         </div>
@@ -119,7 +112,7 @@
         <div class="row text-center">
             <h2>Our Developers</h2>
             <br />
-            <p class="dev-des">
+            <p class="description-col">
             Asia’s leading property developer and one of the Philippines’ fastest-growing
             real estate brands  <br /> have come together to bring Mandani Bay to life.
             </p>
