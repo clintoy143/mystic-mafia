@@ -199,6 +199,10 @@ p.copyright {
     color: #dbdde0;
 }
 
+.dev-p{
+    font-size: 12px;
+}
+
 .description-col {
     color: #7c7c7c;
 }
@@ -206,3 +210,118 @@ p.copyright {
 .inquiry{
     background: image_url("bg/upfeathers.png");
 }
+
+.img-showroom {
+    max-width: 100%;
+}
+
+
+.facebook{
+	background-color: #204385;
+	padding: 10px 15px 10px 15px;
+}
+
+
+.google-plus{
+	background-color: #d3492c;
+	padding: 10px;
+}
+
+.facebook, .google-plus{
+    color: white;
+    display: inline-block;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+.google-plus:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+    color: white;
+}
+
+.facebook:hover {
+    cursor: pointer;
+    transition: 0.2s;
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+    color: white;
+}
+
+ #map-mandani {
+   width: 100%;
+   height: 430px;
+   background-color: grey;
+ }
+
+form .control {
+  position: relative;
+  margin-bottom: 20px; }
+  form .control .fa {
+    position: absolute;
+    left: 15px;
+    top: 15px; }
+  form .control input {
+    padding: 15px;
+    padding-left: 40px;
+    width: 100%; }
+form input, form textarea, form select {
+  outline: none;
+  padding: 10px;
+  border: none; }
+form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+form textarea {
+  resize: vertical; }
+
+/*
+ * Reusable Components Style
+ */
+.button, form input[type="submit"], form button, form input[type="reset"] {
+  background-color: #b79e69;
+  background-image: -webkit-linear-gradient(#e8cf99, #b79e69);
+  background-image: linear-gradient(#e8cf99, #b79e69);
+  border: none;
+  border-radius: 0;
+  padding: 10px 20px;
+  -webkit-transition: .3s ease;
+          transition: .3s ease;
+  color: #54492f;
+  display: inline-block; }
+  .button:hover, form input[type="submit"]:hover, form button:hover, form input[type="reset"]:hover {
+    background: #c8b48b; }
+
+.subscribe-form {
+  background: #262322;
+  padding: 30px; }
+  @media screen and (max-width: 990px) {
+    .subscribe-form {
+      width: 100%;
+      position: relative;
+      left: 0; } }
+  .subscribe-form .form-subtitle {
+    font-size: 18px;
+    font-size: 1.2857142857em;
+    color: white; }
+  .subscribe-form .form-title {
+    font-size: 36px;
+    font-size: 2.5714285714em;
+    color: white;
+    font-weight: 300; }
+  .subscribe-form p {
+    color: #9d9997;
+    margin: 30px 0; }
+  .subscribe-form input .fa {
+    -webkit-transition: .3s ease;
+            transition: .3s ease; }
+  .subscribe-form input:hover + .fa, .subscribe-form input:focus + .fa {
+    color: #b79e69; }
+  .subscribe-form input[type="submit"] {
+    width: 100%;
+    font-size: 18px;
+    font-size: 1.2857142857em;
+    padding: 15px 20px; }

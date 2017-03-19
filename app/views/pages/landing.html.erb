@@ -49,6 +49,7 @@
 <div class="content-section-a">
 
     <div class="container">
+        
         <div class="row">
             <div class="col-md-4">
                 <hr class="section-heading-spacer">
@@ -69,68 +70,115 @@
 
 </div>
 <!-- /.content-section-a -->
-
-<div class="content-section-b">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-8 text-center">
-                <%= image_tag ("1.jpg"), class:"img-des"%>
+    <div class="content-section-b">
+    
+        <div class="container">
+    
+            <div class="row">
+                <div class="col-md-8 text-center">
+                    <%= image_tag ("1.jpg"), class:"img-des"%>
+                </div>
+                <div class="col-md-4">
+                    
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Green Promenade</h2>
+                    <p class="lead description-col">This extensive tree-lined avenue cuts through the property, lending a grounded and refreshing 
+                    spirit to the environment and encouraging an active lifestyle among residents.</p>                
+                </div>
             </div>
-            <div class="col-md-4">
-                
-                <hr class="section-heading-spacer">
-                <div class="clearfix"></div>
-                <h2 class="section-heading">Green Promenade</h2>
-                <p class="lead description-col">This extensive tree-lined avenue cuts through the property, lending a grounded and refreshing 
-                spirit to the environment and encouraging an active lifestyle among residents.</p>                
-            </div>
+    
         </div>
-
+        <!-- /.container -->
+    
     </div>
-    <!-- /.container -->
-
-</div>
-<!-- /.content-section-b -->
-
-<div class="content-section-a">
-
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-4">
-                <hr class="section-heading-spacer">
-                <div class="clearfix"></div>
-                <h2 class="section-heading">Waterfront and Boardwalk</h2>
-                <p class="lead description-col">Fronting Mandani Bay, a grand harbor provides a stunning view of the coast and surrounding skyline.</p>
+    <!-- /.content-section-b -->
+    
+    <div class="content-section-a">
+    
+        <div class="container">
+    
+            <div class="row">
+                <div class="col-md-4">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Waterfront and Boardwalk</h2>
+                    <p class="lead description-col">Fronting Mandani Bay, a grand harbor provides a stunning view of the coast and surrounding skyline.</p>
+                </div>
+                <div class="col-md-8 text-center">
+                    <%= image_tag ("4.jpg"), class:"img-des" %>
+                </div>
             </div>
-            <div class="col-md-8 text-center">
-                <%= image_tag ("4.jpg"), class:"img-des" %>
-            </div>
+    
         </div>
-
+        <!-- /.container -->
+    
     </div>
-    <!-- /.container -->
+    <!-- /.content-section-a -->
+<div class="container">
+    <h2 class="text-center">Visit us</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <div id="map-mandani" >
+                    <script> 
+                      function initMap() {
+                        var uluru = {lat: 10.321371, lng: 123.937450};
+                        var map = new google.maps.Map(document.getElementById('map-mandani'), {
+                          zoom: 16,
+                          center: uluru
+                        });
+                        var marker = new google.maps.Marker({
+                          position: uluru,
+                          map: map
+                        });
+                      }
+                    </script>
+                </div>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxtJehSNmIhrcJApLFLDnN7X42unL0LGk&callback=initMap">
+                </script>
+            </div>    
+            <div class="col-md-4">
+            	<div class="subscribe-form">
+            		<form action="#">
+            			<small class="form-subtitle">Start to live in Your</small>
+            			<h2 class="form-title">New Home</h2>
+            			<div class="control">
+            				<input type="text" placeholder="Your name...">
+            				<i class="fa fa-user"></i>
+            			</div>
+            			<div class="control">
+            				<input type="text" placeholder="Email address...">
+            				<i class="fa fa-envelope"></i>
+            			</div>
+            			<div class="control">
+            				<input type="text" placeholder="Phone number...">
+            				<i class="fa fa-phone"></i>
+            			</div>
+            			<input type="submit" value="Send">
+            		</form>
+            	</div>            
+            </div>
+        </div>    
+</div>    
 
-</div>
-<!-- /.content-section-a -->
-
-<a  name="contact"></a>
 <div class="banner">
 
     <div class="container">
 
-        <div class="row text-center">
-            <h2>Our Developers</h2>
-            <br />
-            <p class="description-col">
-            Asia’s leading property developer and one of the Philippines’ fastest-growing<br /> 
-            real estate brands  have come together to bring Mandani Bay to life.
-            </p>
-            <a href="http://www.hkland.com/en/home.html" class="btn btn-default btn-lg" target="_blank"><%= image_tag("hk-logo.png")%></a>
-            &nbsp; &nbsp;
-            <a href="http://taft.properties/" class="btn btn-default btn-lg" target="_blank"><%= image_tag("rsz_taft-logo.png")%></a>
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-center">Our Developers</h2>
+
+            </div>    
+            <div class="col-md-6 text-center">
+            
+                <a href="http://www.hkland.com/en/home.html" class="btn btn-default btn-lg" target="_blank"><%= image_tag("hk-logo.png")%></a>
+                &nbsp; &nbsp;
+                <a href="http://taft.properties/" class="btn btn-default btn-lg" target="_blank"><%= image_tag("rsz_taft-logo.png")%></a><br />
+                <p class="description-col dev-p text-center">
+                Asia’s leading property developer and one of the Philippines’ fastest-growing
+                real estate brands  have come together to bring Mandani Bay to life.
+                </p>  
             </div>
         </div>
 
@@ -140,15 +188,24 @@
 </div>
 <!-- /.banner -->
 
+
+
 <!-- Footer -->
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-
+            <div class="col-md-5">
                 <p class="copyright text-muted small">Copyright &copy; Cebu Properties International 2017. All Rights Reserved</p>
             </div>
+            <div class="col-md-7">
+                <h4>You can also visit us here</h4>
+                <div class="social-links">
+                    <a class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a class="google-plus"><i class="fa fa-google-plus"></i></a>
+                </div>
+            </div>    
         </div>
+
     </div>
 </footer>
 
