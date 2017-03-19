@@ -68,12 +68,7 @@ h6 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
-@media screen and (max-width: 767px) {
-    .img-des{
-        height: 100px;
-        max-width: 100%;
-    }
-}
+
 
 @media(max-width:767px) {
     .intro-message {
@@ -150,6 +145,13 @@ h6 {
     margin-top: 0;
 }
 
+@media screen and (max-width:1024) {
+    .img-des{
+        height: 390px;
+        width: 640px;
+    }
+}
+
 @media(max-width:1199px) {
     ul.banner-social-buttons {
         float: left;
@@ -190,7 +192,7 @@ p.copyright {
 
 .img-des{
     height: 400px;
-    max-width: 100%;
+    width: 670px;
 }
 
 .dev-des{

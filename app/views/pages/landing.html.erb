@@ -1,4 +1,16 @@
+<script>
+    $(document).ready(function(){
+        if ($(window).width() < 760) {
+            $(".img-des").addClass("img-responsive").removeClass("img-desc");
+        }
+        else {
+            $(".img-responsive").addClass("img-desc").removeClass("img-responsive");
+        };
+    });    
+</script>
+
 <%= render "nav"%>
+
 <!-- Header -->
 
 <div class="intro-header">

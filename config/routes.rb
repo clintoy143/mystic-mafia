@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+    get "/dev" => "pages#dev"
+    get "/showroom" => "pages#showroom"
     get '/sent' => "pages#sent", as: "/thanks"
     get '/login' => 'sessions#new'
     post '/login' => 'sessions#create'

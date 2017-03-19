@@ -10,6 +10,12 @@ class PagesController < ApplicationController
         @message = Client.all
     end
     
+    def dev
+    end
+    
+    def showroom
+    end
+    
     def create
         @client = Client.create(client_params)
         if @client.save
