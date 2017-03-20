@@ -1,4 +1,4 @@
 class Admin < ApplicationRecord
-    validates :name, presence: true
+    validates :admin_name, presence: true
     has_secure_password
 end
