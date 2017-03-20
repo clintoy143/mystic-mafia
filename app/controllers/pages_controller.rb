@@ -19,10 +19,9 @@ class PagesController < ApplicationController
     def create
         @client = Client.create(client_params)
         if @client.save
-            
             redirect_to thanks_path
         else
-            render "landing"
+            redirect_to root_path
         end
     end
     
