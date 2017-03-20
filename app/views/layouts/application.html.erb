@@ -12,7 +12,7 @@
   <script>
     $(document).ready(function(){
       // Add smooth scrolling to all links in navbar + footer link
-      $(".navbar a").on('click', function(event) {
+      $(".navbar a, #arrow i").on('click', function(event) {
     
        // Make sure this.hash has a value before overriding default behavior
       if (this.hash !== "") {
@@ -40,19 +40,11 @@
     <script>
       $(document).ready(function(){
         $("#my-wrapper").fadeIn();
-        
-        $(window).scroll(function(){
-          if ($(window).scrollTop() > 20 ) {
-            $("#up").fadeIn('slow');
-          } else {
-            $("#up").fadeOut('slow');
-          }
-        });  
       });
     </script>
     <div id="my-wrapper">
       <%= yield %>
-      <a href="/"><i class="fa fa-arrow-up fa-2x" aria-hidden="true" id="up"></i></a>  
+     
     </div>
 
   </body>
