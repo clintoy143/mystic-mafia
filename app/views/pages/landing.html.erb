@@ -42,7 +42,7 @@
 
 <!-- Init Intro -->
 <div id="about">
-    <div class="container">
+    <div class="container slide-right">
         <div class="row text-center" id="intro">
             <div class="col-md-4  text-center">
                 <%= image_tag "intro/benefit-icon-3.png", class:"img-intro"%>
@@ -66,20 +66,51 @@
     </div>
 </div>
 <div class="container" id="feature">
-    <h2 class="text-center" id="features">FEATURES</h2>
+    <h2 class="text-center" id="features"><span class="slide-right">FEATURES</span></h2>
 </div>
+
+<script>
+$(document).ready(function(){
+
+    $(window).scroll(function() {
+        $(".img-des, #visit").each(function(){
+          var pos = $(this).offset().top;
+      
+          var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).delay(500).animate({
+                opacity: "1"
+            }, 1000);
+          }
+        });
+
+        $(".slide-right").each(function(){
+          var pos = $(this).offset().top;
+      
+          var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("slide");
+          }
+        });        
+    }); 
+
+});
+</script>
+
 
 <div class="content-section-a">
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <hr class="section-heading-spacer">
-                <div class="clearfix"></div>
-                <h2 class="section-heading" style="display:inline-block;">Mandani Bay</h2> &nbsp SUITES
-                <p class="lead description-col">
-                    The waterfront lifestyle at Mandani Bay begins at Mandani Bay Suites, the property’s first residential enclave.
-                    Two towers are situated on a large podium that houses recreational amenities, community support facilities, and car parks.
-                </p>
+                <div class="slide-right">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading" style="display:inline-block;">Mandani Bay Suites</h2>
+                    <p class="lead description-col">
+                        The waterfront lifestyle at Mandani Bay begins at Mandani Bay Suites, the property’s first residential enclave.
+                        Two towers are situated on a large podium that houses recreational amenities, community support facilities, and car parks.
+                    </p>
+                </div>    
             </div>
             <div class="col-md-8 text-center">
                 <%= image_tag ("3.jpg"), class:"img-des" %>
@@ -92,20 +123,19 @@
 </div>
 <!-- /.content-section-a -->
     <div class="content-section-b">
-    
         <div class="container">
-    
             <div class="row">
                 <div class="col-md-8 text-center">
                     <%= image_tag ("1.jpg"), class:"img-des"%>
                 </div>
                 <div class="col-md-4">
-                    
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Green Promenade</h2>
-                    <p class="lead description-col">This extensive tree-lined avenue cuts through the property, lending a grounded and refreshing 
-                    spirit to the environment and encouraging an active lifestyle among residents.</p>                
+                    <div class="slide-right">                    
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Green Promenade</h2>
+                        <p class="lead description-col">This extensive tree-lined avenue cuts through the property, lending a grounded and refreshing 
+                        spirit to the environment and encouraging an active lifestyle among residents.</p>          
+                    </div>    
                 </div>
             </div>
         </div>
@@ -120,10 +150,12 @@
     
             <div class="row">
                 <div class="col-md-4">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Waterfront and Boardwalk</h2>
-                    <p class="lead description-col">Fronting Mandani Bay, a grand harbor provides a stunning view of the coast and surrounding skyline.</p>
+                    <div class="slide-right">                    
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Waterfront and Boardwalk</h2>
+                        <p class="lead description-col">Fronting Mandani Bay, a grand harbor provides a stunning view of the coast and surrounding skyline.</p>
+                    </div>
                 </div>
                 <div class="col-md-8 text-center">
                     <%= image_tag ("4.jpg"), class:"img-des" %>
