@@ -15,7 +15,6 @@
 
 <div class="intro-header">
     <div class="container">
-
         <div class="row">
             <div class="col-lg-12">
                 <div class="intro-message">
@@ -23,16 +22,12 @@
                     <h3 class="dev-des"><%= @content.tagline %></h3>
                     <hr class="intro-divider">
                     <buttontype="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Set Appointment</button>
-                       
-                    
                 </div>
             </div>
         </div>
-
-    </div>
-    <!-- /.container -->
-
+    </div>     <!-- /.container -->
 </div>
+
  <%= render "modal"%>   
 <!-- /.intro-header -->
 <div class="container-fluid">
@@ -42,14 +37,39 @@
         &nbsp;+63 995 344 1335</h3>
             <br />
     </div>
-
 </div>
 <!-- Page Content -->
 
-<div class="content-section-a">
+<!-- Init Intro -->
+<div class="container">
+    <div class="row text-center" id="intro">
+        <div class="col-md-4  text-center">
+            <%= image_tag "intro/benefit-icon-3.png", class:"img-intro"%>
+            <p class="">Huge Property Investment Potential</p>
+            <p class="description-col intro-icon">Expect Mandani Bay’s investment value to continually appreciate 
+            over the course of its development of more than 10 years.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <%= image_tag "intro/benefit-icon-1.png", class:"img-intro"%>
+            <p class="">Topnotch Asian Developers</p>
+            <p class="description-col intro-icon">This township will be built through the partnership of Hongkong Land and Taft Properties, 
+            along with Asia’s top consultants in property development.</p>
+        </div>
+        <div class="col-md-4 text-center ">
+            <%= image_tag "intro/benefit-icon-4.png", class:"img-intro"%>
+            <p class="">Prime Waterfront Location</p>
+            <p class="description-col intro-icon">The property, stretched along the Mactan Channel, is near the airport, 
+            two major hospitals, the Cebu Business Park, and Asia Town IT Park.</p>
+        </div>
+    </div>
+</div>
 
+<div class="container">
+    <h2 class="text-center" id="feature">FEATURES</h2>
+</div>
+
+<div class="content-section-a">
     <div class="container">
-        
         <div class="row">
             <div class="col-md-4">
                 <hr class="section-heading-spacer">
@@ -87,7 +107,6 @@
                     spirit to the environment and encouraging an active lifestyle among residents.</p>                
                 </div>
             </div>
-    
         </div>
         <!-- /.container -->
     
@@ -115,8 +134,8 @@
     
     </div>
     <!-- /.content-section-a -->
-<div class="container">
-    <h2 class="text-center">Visit us</h2>
+<div class="container" id="visit">
+    <h2 class="">Find us here</h2>
         <div class="row">
             <div class="col-md-8">
                 <div id="map-mandani" >
@@ -139,23 +158,23 @@
             </div>    
             <div class="col-md-4">
             	<div class="subscribe-form">
-            		<form action="#">
+            		<%= form_for @client, url: send_path do |client| %>
             			<small class="form-subtitle">Start to live in Your</small>
             			<h2 class="form-title">New Home</h2>
             			<div class="control">
-            				<input type="text" placeholder="Your name...">
+            				<%= client.text_field :name, placeholder: "Your name..."%>
             				<i class="fa fa-user"></i>
             			</div>
             			<div class="control">
-            				<input type="text" placeholder="Email address...">
+            				<%= client.email_field :email, placeholder: "Your email..."%>
             				<i class="fa fa-envelope"></i>
             			</div>
             			<div class="control">
-            				<input type="text" placeholder="Phone number...">
+            				<%= client.text_field :name, placeholder: "Phone number..."%>
             				<i class="fa fa-phone"></i>
             			</div>
-            			<input type="submit" value="Send">
-            		</form>
+            			<%= client.submit "Submit"%>
+            		<% end %>
             	</div>            
             </div>
         </div>    
@@ -200,8 +219,10 @@
             <div class="col-md-7">
                 <h4>You can also visit us here</h4>
                 <div class="social-links">
-                    <a class="facebook"><i class="fa fa-facebook"></i></a>
-                    <a class="google-plus"><i class="fa fa-google-plus"></i></a>
+                    <a class="facebook" href="https://www.facebook.com/Mandani-Bay-John-Live-your-passion-156035171567829/">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a class="google-plus" href="https://plus.google.com/111926250485014557949"><i class="fa fa-google-plus"></i></a>
                 </div>
             </div>    
         </div>
