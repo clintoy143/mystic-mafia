@@ -1,3 +1,31 @@
+  <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, #up").on('click', function(event) {
+    
+       // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+    
+        // Prevent default anchor click behavior
+        event.preventDefault();
+    
+        // Store hash
+        var hash = this.hash;
+    
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+    
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+          });
+        } // End if
+      });
+    })
+  </script>  
+
 <!-- Navigation -->
 <nav class="navbar navbar-fixed-top navbar-default topnav" role="navigation">
     <div class="container topnav">
@@ -15,18 +43,17 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#about">Features</a>
+                    <a href="#about">About</a>
+                </li>    
+                <li>
+                    <a href="#feature">Features</a>
                 </li>
                 <li>
-                    <a href="#services">Developers</a>
-                </li>
-                <li>
-                    <a href="#contact">Show Gallery</a>
-                </li>
-                <li>
-                    <a href="#contact">About</a>
+                    <a href="#visit">Location</a>
                 </li>                
-                    
+                <li>
+                    <a href="#developer">Developers</a>
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
