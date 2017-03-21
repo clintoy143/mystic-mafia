@@ -28,9 +28,18 @@
 }
 
 #visit {
+    border-top: 1px solid #b3b3b3;
     opacity: 0;
     padding-bottom: 50px;
     padding-top: 50px;
+}
+
+#developer {
+    background: image_url("mandani.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 #features {
