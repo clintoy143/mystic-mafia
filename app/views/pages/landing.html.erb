@@ -12,7 +12,10 @@
 <%= render "nav"%>
 
 <!-- Header -->
-
+ <iframe width="650" height="450" class="video"
+    src="https://www.youtube.com/embed/8Pbwojn6FAc?autoplay=1">
+     
+</iframe> <!-- /video -->
 <div class="intro-header">
     <div class="container">
         <div class="row">
@@ -28,137 +31,94 @@
     </div>     <!-- /.container -->
 </div>
 
- <%= render "modal"%>   
+ <%= render "modal"%>  
 <!-- /.intro-header -->
-<div class="container-fluid">
-    <div class="row inquiry">
-        <h3 class="text-center" style="color:#7c7c7c;">Inquiries? Get in touch with us &nbsp;
-        <span class="glyphicon glyphicon-earphone"  aria-hidden="true"></span>
-        &nbsp;+63 995 344 1335</h3>
-            <br />
-    </div>
-</div>
-<!-- Page Content -->
-
-<!-- Init Intro -->
-<div id="about">
-    <div class="container slide-right">
-        <div class="row text-center" id="intro">
-            <div class="col-md-4  text-center">
-                <%= image_tag "intro/benefit-icon-3.png", class:"img-intro"%>
-                <p class="">Huge Property Investment Potential</p>
-                <p class="description-col intro-icon">Expect Mandani Bay’s investment value to continually appreciate 
-                over the course of its development of more than 10 years in Cebu.</p>
-            </div>
-            <div class="col-md-4 text-center">
-                <%= image_tag "intro/benefit-icon-1.png", class:"img-intro"%>
-                <p class="">Topnotch Asian Developers</p>
-                <p class="description-col intro-icon">This township will be built through the partnership of Hongkong Land and Taft Properties, 
-                along with Asia’s top consultants in property development.</p>
-            </div>
-            <div class="col-md-4 text-center ">
-                <%= image_tag "intro/benefit-icon-4.png", class:"img-intro"%>
-                <p class="">Prime Waterfront Location</p>
-                <p class="description-col intro-icon">The property, stretched along the Mactan Channel, is near the airport, 
-                two major hospitals, the Cebu Business Park, and Asia Town IT Park.</p>
-            </div>
+<div id="front">
+     
+    <div class="container-fluid">
+        <div class="row inquiry">
+            <h3 class="text-center" style="color:#7c7c7c;">Inquiries? Get in touch with us &nbsp;
+            <span class="glyphicon glyphicon-earphone"  aria-hidden="true"></span>
+            &nbsp;+63 995 344 1335</h3>
+                <br />
         </div>
     </div>
-</div>
-<div class="container" id="feature">
-    <h2 class="text-center" id="features"><span class="slide-right">FEATURES</span></h2>
-</div>
-
-<script>
-$(document).ready(function(){
-
-    $(window).scroll(function() {
-        $(".img-des, #visit").each(function(){
-          var pos = $(this).offset().top;
-      
-          var winTop = $(window).scrollTop();
-          if (pos < winTop + 600) {
-            $(this).delay(500).animate({
-                opacity: "1"
-            }, 1000);
-          }
-        });
-
-        $(".slide-right").each(function(){
-          var pos = $(this).offset().top;
-      
-          var winTop = $(window).scrollTop();
-          if (pos < winTop + 600) {
-            $(this).addClass("slided");
-          }
-        });        
-    }); 
-
-});
-</script>
-
-
-<div class="content-section-a">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="slide-right">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading" style="display:inline-block;">Mandani Bay Suites</h2>
-                    <p class="lead description-col">
-                        The waterfront lifestyle at Mandani Bay begins at Mandani Bay Suites, the property’s first residential enclave.
-                        Two towers are situated on a large podium that houses recreational amenities, community support facilities, and car parks.
-                    </p>
-                </div>    
-            </div>
-            <div class="col-md-8 text-center">
-                <%= image_tag ("3.jpg"), class:"img-des" %>
-            </div>
-        </div>
-
-    </div>
-    <!-- /.container -->
-
-</div>
-<!-- /.content-section-a -->
-    <div class="content-section-b">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 text-center">
-                    <%= image_tag ("1.jpg"), class:"img-des"%>
-                </div>
-                <div class="col-md-4">
-                    <div class="slide-right">                    
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading">Green Promenade</h2>
-                        <p class="lead description-col">This extensive tree-lined avenue cuts through the property, lending a grounded and refreshing 
-                        spirit to the environment and encouraging an active lifestyle among residents.</p>          
-                    </div>    
-                </div>
-            </div>
-        </div>
-        <!-- /.container -->
+    <!-- Page Content -->
     
+    <!-- Init Intro -->
+    <div id="about">
+        <div class="container slide-right">
+            <div class="row text-center" id="intro">
+                <div class="col-md-4  text-center">
+                    <%= image_tag "intro/benefit-icon-3.png", class:"img-intro"%>
+                    <p class="">Huge Property Investment Potential</p>
+                    <p class="description-col intro-icon">Expect Mandani Bay’s investment value to continually appreciate 
+                    over the course of its development of more than 10 years in Cebu.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <%= image_tag "intro/benefit-icon-1.png", class:"img-intro"%>
+                    <p class="">Topnotch Asian Developers</p>
+                    <p class="description-col intro-icon">This township will be built through the partnership of Hongkong Land and Taft Properties, 
+                    along with Asia’s top consultants in property development.</p>
+                </div>
+                <div class="col-md-4 text-center ">
+                    <%= image_tag "intro/benefit-icon-4.png", class:"img-intro"%>
+                    <p class="">Prime Waterfront Location</p>
+                    <p class="description-col intro-icon">The property, stretched along the Mactan Channel, is near the airport, 
+                    two major hospitals, the Cebu Business Park, and Asia Town IT Park.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- /.content-section-b -->
+    <div class="container" id="feature">
+        <h2 class="text-center" id="features"><span class="slide-right">FEATURES</span></h2>
+    </div>
+    
+    <script>
+    $(document).ready(function(){
+    
+        $(window).scroll(function() {
+            $(".img-des, #visit").each(function(){
+              var pos = $(this).offset().top;
+          
+              var winTop = $(window).scrollTop();
+              if (pos < winTop + 600) {
+                $(this).delay(500).animate({
+                    opacity: "1"
+                }, 1000);
+              }
+            });
+    
+            $(".slide-right").each(function(){
+              var pos = $(this).offset().top;
+          
+              var winTop = $(window).scrollTop();
+              if (pos < winTop + 600) {
+                $(this).addClass("slided");
+              }
+            });        
+        }); 
+    
+    });
+    </script>
+    
     
     <div class="content-section-a">
-    
         <div class="container">
-    
             <div class="row">
                 <div class="col-md-4">
-                    <div class="slide-right">                    
+                    <div class="slide-right">
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading">Waterfront and Boardwalk</h2>
-                        <p class="lead description-col">Fronting Mandani Bay, a grand harbor provides a stunning view of the Cebu's coast and surrounding skyline.</p>
-                    </div>
+                        <h2 class="section-heading" style="display:inline-block;">Mandani Bay Suites</h2>
+                        <p class="lead description-col">
+                            The waterfront lifestyle at Mandani Bay begins at Mandani Bay Suites, the property’s first residential enclave.
+                            Two towers are situated on a large podium that houses recreational amenities, community support facilities, and car parks.
+                        </p>
+                    </div>    
                 </div>
                 <div class="col-md-8 text-center">
-                    <%= image_tag ("4.jpg"), class:"img-des" %>
+                    <%= image_tag ("3.jpg"), class:"img-des" %>
                 </div>
             </div>
     
@@ -166,116 +126,161 @@ $(document).ready(function(){
         <!-- /.container -->
     
     </div>
-<div class="banner" id="developer">
-
-    <div class="container">
-
-        <div class="row text-center">
-
-                <h2 class="text-center" style="color: #f2f2f2;">Our Developers</h2><br />
-                <p class="dev-p text-center">
-                Asia’s leading property developer and one of the Philippines’ fastest-growing
-                real estate brands  have come together to bring Mandani Bay to life.
-                </p><br /><br />   
-                <span style="margin-top: 40px;">
-                    <a href="http://www.hkland.com/en/home.html" class="btn btn-default btn-lg" target="_blank">
-                    <%= image_tag("hk-logo.png")%></a>
-                    <br /><br />
-                    <a href="http://www.cebupropertiesinternational.com/" class="btn btn-default btn-lg" target="_blank">
-                    <%= image_tag("rsz_taft-logo.png")%></a>
-                </span>    
- 
-        </div>
-
-    </div>
-    <!-- /.container -->
-
-</div>    <!-- /.content-section-a -->
-
-
-<div class="container" id="visit">
-    <h2 class="">Find us here</h2>
-        <div class="row">
-            <div class="col-md-8">
-                <div id="map-mandani" >
-                    <script> 
-                      function initMap() {
-                        var uluru = {lat: 10.321371, lng: 123.937450};
-                        var map = new google.maps.Map(document.getElementById('map-mandani'), {
-                          zoom: 16,
-                          center: uluru
-                        });
-                        var marker = new google.maps.Marker({
-                          position: uluru,
-                          map: map
-                        });
-                      }
-                    </script>
+    <!-- /.content-section-a -->
+        <div class="content-section-b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 text-center">
+                        <%= image_tag ("1.jpg"), class:"img-des"%>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="slide-right">                    
+                            <hr class="section-heading-spacer">
+                            <div class="clearfix"></div>
+                            <h2 class="section-heading">Green Promenade</h2>
+                            <p class="lead description-col">This extensive tree-lined avenue cuts through the property, lending a grounded and refreshing 
+                            spirit to the environment and encouraging an active lifestyle among residents.</p>          
+                        </div>    
+                    </div>
                 </div>
-                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxtJehSNmIhrcJApLFLDnN7X42unL0LGk&callback=initMap">
-                </script>
-            </div>    
-            <div class="col-md-4">
-            	<div class="subscribe-form">
-            		<%= form_for @client, url: send_path do |client| %>
-            			<small class="form-subtitle">Start to live in Your</small>
-            			<h2 class="form-title">New Home</h2>
-            			<div class="control">
-            				<%= client.text_field :name, placeholder: "Your name..."%>
-            				<i class="fa fa-user"></i>
-            			</div>
-            			<div class="control">
-            				<%= client.email_field :email, placeholder: "Your email..."%>
-            				<i class="fa fa-envelope"></i>
-            			</div>
-            			<div class="control">
-            				<%= client.text_field :name, placeholder: "Phone number..."%>
-            				<i class="fa fa-phone"></i>
-            			</div>
-            			<%= client.submit "Submit"%>
-            		<% end %>
-            	</div>            
             </div>
-        </div>    
-</div>    
-
-<!-- /.banner -->
-
-
-
-<!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7">
-                
-                <big>John Kenneth Macasero</big><br/>
-                <small style="color:#8c8c8c ;"><em> Property Specialist </em></small><br />
-                <span style="color: #8c8c8c;">
-                    <i class="fa fa-phone-square fa-2x" aria-hidden="true"></i> +63995-334-1335 / +63933-961-1191<br />
-                    <i class="fa fa-envelope fa-2x" aria-hidden="true"></i> johnkennethmacasero@gmail.com  <br />
-                    <i class="fa fa-skype fa-2x" aria-hidden="true"></i> John Ymbong Macasero <br />
-                    <i class="fa fa-location-arrow fa-2x" aria-hidden="true"></i> 5/F Mercedes Benz Tower
-    Mindanao Ave., Cebu Business Park
-    Cebu City, Philippines 6000</span>
-            </div>            
-
-            <div class="col-md-5">
-                <div class="social-links text-center">
-                    <a class="facebook" href="https://www.facebook.com/Mandani-Bay-John-Live-your-passion-156035171567829/">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a class="google-plus" href="https://plus.google.com/111926250485014557949"><i class="fa fa-google-plus"></i></a>
-                </div>                
-                
-            </div>            
-
+            <!-- /.container -->
+        
         </div>
-        <div class="row text-right">
-            <div class="col-md-offset-7 col-md-5">
-            <p class="copyright text-muted text-center" style="font-size: 12px;">Copyright &copy; Cebu Properties International 2017. All Rights Reserved</p>
+        <!-- /.content-section-b -->
+        
+        <div class="content-section-a">
+        
+            <div class="container">
+        
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="slide-right">                    
+                            <hr class="section-heading-spacer">
+                            <div class="clearfix"></div>
+                            <h2 class="section-heading">Waterfront and Boardwalk</h2>
+                            <p class="lead description-col">Fronting Mandani Bay, a grand harbor provides a stunning view of the Cebu's coast and surrounding skyline.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-8 text-center">
+                        <%= image_tag ("4.jpg"), class:"img-des" %>
+                    </div>
+                </div>
+        
+            </div>
+            <!-- /.container -->
+        
         </div>
-    </div>
-</footer>
-
+    <div class="banner" id="developer">
+    
+        <div class="container">
+    
+            <div class="row text-center">
+    
+                    <h2 class="text-center" style="color: #f2f2f2;">Our Developers</h2><br />
+                    <p class="dev-p text-center">
+                    Asia’s leading property developer and one of the Philippines’ fastest-growing
+                    real estate brands  have come together to bring Mandani Bay to life.
+                    </p><br /><br />   
+                    <span style="margin-top: 40px;">
+                        <a href="http://www.hkland.com/en/home.html" class="btn btn-default btn-lg" target="_blank">
+                        <%= image_tag("hk-logo.png")%></a>
+                        <br /><br />
+                        <a href="http://www.cebupropertiesinternational.com/" class="btn btn-default btn-lg" target="_blank">
+                        <%= image_tag("rsz_taft-logo.png")%></a>
+                    </span>    
+     
+            </div>
+    
+        </div>
+        <!-- /.container -->
+    
+    </div>    <!-- /.content-section-a -->
+    
+    
+    <div class="container" id="visit">
+        <h2 class="">Find us here</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <div id="map-mandani" >
+                        <script> 
+                          function initMap() {
+                            var uluru = {lat: 10.321371, lng: 123.937450};
+                            var map = new google.maps.Map(document.getElementById('map-mandani'), {
+                              zoom: 16,
+                              center: uluru
+                            });
+                            var marker = new google.maps.Marker({
+                              position: uluru,
+                              map: map
+                            });
+                          }
+                        </script>
+                    </div>
+                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxtJehSNmIhrcJApLFLDnN7X42unL0LGk&callback=initMap">
+                    </script>
+                </div>    
+                <div class="col-md-4">
+                	<div class="subscribe-form">
+                		<%= form_for @client, url: send_path do |client| %>
+                			<small class="form-subtitle">Start to live in Your</small>
+                			<h2 class="form-title">New Home</h2>
+                			<div class="control">
+                				<%= client.text_field :name, placeholder: "Your name..."%>
+                				<i class="fa fa-user"></i>
+                			</div>
+                			<div class="control">
+                				<%= client.email_field :email, placeholder: "Your email..."%>
+                				<i class="fa fa-envelope"></i>
+                			</div>
+                			<div class="control">
+                				<%= client.text_field :name, placeholder: "Phone number..."%>
+                				<i class="fa fa-phone"></i>
+                			</div>
+                			<%= client.submit "Submit"%>
+                		<% end %>
+                	</div>            
+                </div>
+            </div>    
+    </div>    
+    
+    <!-- /.banner -->
+    
+    
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    
+                    <big>John Kenneth Macasero</big><br/>
+                    <small style="color:#8c8c8c ;"><em> Property Specialist </em></small><br />
+                    <span style="color: #8c8c8c;">
+                        <i class="fa fa-phone-square fa-2x" aria-hidden="true"></i> +63995-334-1335 / +63933-961-1191<br />
+                        <i class="fa fa-envelope fa-2x" aria-hidden="true"></i> johnkennethmacasero@gmail.com  <br />
+                        <i class="fa fa-skype fa-2x" aria-hidden="true"></i> John Ymbong Macasero <br />
+                        <i class="fa fa-location-arrow fa-2x" aria-hidden="true"></i> 5/F Mercedes Benz Tower
+        Mindanao Ave., Cebu Business Park
+        Cebu City, Philippines 6000</span>
+                </div>            
+    
+                <div class="col-md-5">
+                    <div class="social-links text-center">
+                        <a class="facebook" href="https://www.facebook.com/Mandani-Bay-John-Live-your-passion-156035171567829/">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a class="google-plus" href="https://plus.google.com/111926250485014557949"><i class="fa fa-google-plus"></i></a>
+                    </div>                
+                    
+                </div>            
+    
+            </div>
+            <div class="row text-right">
+                <div class="col-md-offset-7 col-md-5">
+                <p class="copyright text-muted text-center" style="font-size: 12px;">Copyright &copy; Cebu Properties International 2017. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</div>
 
